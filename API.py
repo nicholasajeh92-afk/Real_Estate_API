@@ -13,7 +13,7 @@ df["updated_date"] = pd.to_datetime(df["updated_date"], errors="coerce")
 df["month_added"] = df["added_date"].dt.to_period("M").astype(str)
 
 # Save back to CSV
-df.to_csv("Real_estate_project2.csv,index=False")
+df.to_csv("Real_estate_project2.csv", index=False)
 
 print("✅ Date columns fixed and dataset re-saved")
 
